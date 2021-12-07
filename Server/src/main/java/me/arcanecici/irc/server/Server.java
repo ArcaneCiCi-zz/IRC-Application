@@ -85,6 +85,10 @@ public class Server {
     }
 
     public static void main(String[] args) {
-        new Server(Javalin.create().start("0.0.0.0", 9090));
+        if (args[1] == null) {
+            new Server(Javalin.create().start("0.0.0.0", 9099));
+        } else {
+            new Server(Javalin.create().start("0.0.0.0", args[1]));
+        }
     }
 }

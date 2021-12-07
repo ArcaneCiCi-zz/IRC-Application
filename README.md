@@ -3,6 +3,12 @@ A simple Java based IRC Application, with the idea of complete anonymity.
 
 Use any alias you want, any time, any place.
 
+# Updates
+
+- v1.1: Added support for custom ports on the server.
+
+- v1.0: Released to the public.
+
 ## Compiling
     Run "mvn clean install" on both modules.
 
@@ -17,5 +23,7 @@ Use any alias you want, any time, any place.
     The default asset url is "ws://0.0.0.0:9099/connect"
 
 ### Server
-    Run compiled JAR, no arguments required.
-    This will change in a later update.
+    Run compiled JAR with the argument:
+    --port <port>
+    
+    If no port is specified on launch, the default port is 9099.
